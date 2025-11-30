@@ -42,11 +42,16 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-card to-background overflow-hidden relative">
-      <img 
-        src="https://cdn.poehali.dev/projects/be3e18e3-61f2-424f-95de-df6b07b1c818/files/6850ebcf-3028-4c12-89b9-b786844c262e.jpg"
-        alt="Праздничная такса"
-        className="fixed bottom-0 right-8 w-48 md:w-64 lg:w-80 opacity-30 pointer-events-none z-0 animate-float"
-      />
+      <div className="fixed bottom-8 right-8 z-0 pointer-events-none">
+        <img 
+          src="https://cdn.poehali.dev/projects/be3e18e3-61f2-424f-95de-df6b07b1c818/files/6850ebcf-3028-4c12-89b9-b786844c262e.jpg"
+          alt="Праздничная такса"
+          className="w-48 md:w-64 lg:w-80 opacity-30 animate-float"
+        />
+        <p className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-accent mt-2 text-center animate-sparkle">
+          Гуфи
+        </p>
+      </div>
 
       {snowflakes.map((snowflake) => (
         <div
